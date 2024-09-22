@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <style>
+        h2 {
+            text-align: center;
+        }
+        #hobbyReading {
+            float: left;
+            width: auto;
+            max-height: 340px;
+            height: 100%;
+            padding: 8px;
+        }
+        #hobbyGardening {
+            float: right;
+            width: auto;
+            max-height: 340px;
+            height: 100%;
+            padding: 8px;
+        }
+        .divfordetails {
+            border: 2px solid rgb(145, 84, 214);
+            border-radius: 2%;
+            padding: 8px;
+        }
+        img {
+            height: 229px;
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="headingDesign">
+        <h1 id="heading">Hobbies</h1>
+    </div>
+    
+    <div id="topnavbar">
+        <ul id="stylefornavbar"> 
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="doingSports.html">Doing Sports</a></li>
+            <li><a href="Music.html" >Music</a></li>
+            <li><a href="programming.html">Programming</a></li>
+            <li><a href="otherHobbies.html" class="active">Other Hobbies</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div id="bodySection" style="border: none;">
+
+        <h1 align="center" style="color: rgb(21, 21, 46);">Let's look into other hobbies</h1>
+
+        <div class="divfordetails" style="width: 47%;float: left;margin-right: 10px;">
+            <h2>Reading</h2>
+
+            <img id="hobbyReading" src="Reading Books.jpg" alt="Book Collection of a friend">
+
+            <p>
+                When it comes to reading it doesn't have to be story books. It could be magazines, newspapers, science books, English books or any other.
+                Reading helps you in increasing your knowledge on the related subject. It also helps to relax yourself and is a good
+                hobby for the one's who wants to engage themselves alone in their spare time. 
+            </p>
+        </div>
+
+        <div class="divfordetails" style="width: 47%;float: right;">
+            <h2>Gardening</h2>
+
+            <img id="hobbyGardening" src="gardening.jpg" alt="Garden of a neighbour">
+
+            <p>
+                Gardening is very good hobby. People engaged in gardening find it very relaxing. They love to see the flowers bloom.
+                They say that when the flowers bloom bees and butterflies go from flower to flower and the scene makes them feel carm 
+                and everything looks charming. Everyday the plants are watered and it gives them a pleasure.
+            </p>
+        </div>
+
+        <div class="divfordetails" style="float: left;margin-top: 10px;">
+            <h2>Collecting Stamps</h2>
+
+            <p>
+                There are many people who love to collect stamps. Some even collect stamps from other countries with the help of 
+                their relatives and friends. You can collect stamps and arrange them in a book with the details on how and from where 
+                you had got them. According to the stamp lovers every stamp has a story to tell of distant lands and strange people. 
+                Looking through the stamps you can follow the history of the nation.
+            </p>
+        </div>
+
+        <div class="divfordetails" style="float: left;margin-top: 10px;">
+            <h2>Drawing</h2>
+
+            <img src="draw1.jpg" alt="Error in Loading" onmouseover="increase(this)" onmouseleave="normal(this)">
+            <img src="draw2.jpg" alt="Error in Loading" onmouseover="increase(this)" onmouseleave="normal(this)">
+            <img src="draw3.jpg" alt="Error in Loading" onmouseover="increase(this)" onmouseleave="normal(this)">
+            <img src="draw4.jpg" alt="Error in Loading" onmouseover="increase(this)" onmouseleave="normal(this)">
+            <img src="draw5.jpg" alt="Error in Loading" onmouseover="increase(this)" onmouseleave="normal(this)">
+        </div>
+
+        <script type="text/javascript">
+            function increase(x) {
+                x.style.height="240px"
+            }
+            function normal(x) {
+                x.style.height = "229px"
+            }
+        </script>
+
+        <p>There are many more hobbies like </p>
+        <ul>
+            <li>Cycling</li>
+            <li>Playing video games</li>
+            <li>Playing musical instruments</li>
+            <li>Singing and Dancing</li>
+            <li>Creating and building things</li>
+            <li>Making Jewelleries</li>
+        </ul>
+    </div>
+    <footer align="center">
+        &COPY 2023. copyrights reserved
+    </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <style>
+        td,caption {
+            font-size: 22px;
+        }
+        textarea {
+            font-size: 18px;
+            height: 120px;
+            width: 600px;
+        }
+        input {
+            font-size: 18px;
+        }
+        button {
+            font-size: 15px;
+            padding: 5px;
+        }
+        .col1 {
+            width: 300px;
+        }
+        .small {
+            width: 350px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="headingDesign">
+        <h1 id="heading">Hobbies</h1>
+    </div>
+    
+    <div id="topnavbar">
+    <ul id="stylefornavbar"> 
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="doingSports.html">Doing Sports</a></li>
+        <li><a href="Music.html" >Music</a></li>
+        <li><a href="programming.html">Programming</a></li>
+        <li><a href="otherHobbies.html">Other Hobbies</a></li>
+        <li><a href="contactUs.html" class="active">Contact Us</a></li>
+    </ul>
+    </div>
+
+    <!--Comment/feedback forum-->
+
+    <div id="bodySection">
+        <h1 align="center" style="color: rgb(21, 21, 46);">Share your ideas</h1>
+        <div>
+            <!--To get comments-->
+            <div id="app">
+                <form v-on:submit.prevent="submitFeedback">
+                    <table cellpadding="5px" cellspacing="8px">
+                        <caption style="text-align: left;">Please feel free to leave a comment or feedback</caption>
+                        <tr>
+                            <td class="col1">Name: </td>
+                            <td class="col2">
+                                <textarea type="text" placeholder="Enter your name" name="name" v-model="name" class="small"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Email: </td>
+                            <td class="col2">
+                                <textarea type="email" placeholder="Enter your email" name="email" v-model="email" class="small"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Hobby/Hobbies: </td>
+                            <td class="col2">
+                                <textarea type="text" placeholder="Enter your Hobbies" name="hobby" v-model="hobby" class="small"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col1">Your Comments/Feedback: </td>
+                            <td class="col2">
+                                <textarea type="text" v-model="feedback" placeholder="Comment..." name="feedback"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <button onclick="confirm()" id="thanks">Submit</button>
+                </form>
+                <!--To display feedback-->
+                <p v-show="submitcomment">{{name}} : {{feedback}}</p>
+            </div>
+            <script type="text/javascript">
+                function confirm() {
+                    document.getElementById('thanks').innerHTML='Another comment'
+                    alert("Thanks for your feedback!");
+                }
+            </script>
+    </div>
+    <script src="contactUs.js"></script>
+    <footer align="center" style="margin-top: 50px;">
+        &COPY 2023. copyrights reserved
+    </footer>
+</body>
+</html> 

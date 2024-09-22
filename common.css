@@ -1,0 +1,71 @@
+/*styles for the format of the the page*/
+body {
+    background-color: rgb(227, 235, 235);
+}
+#bodySection {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#headingDesign {
+    color: #0d0531;
+    margin-bottom: 5px;
+    height: 2.5cm;
+}
+#heading {
+    text-align: center;
+    font-size: 75px;
+    margin-top: 0;
+    letter-spacing: 5px;
+    font-family: Brush Script MT;
+}
+#topnavbar {
+    background-color: #1a1918;
+    color: white;
+    border: 2px solid rgb(145, 84, 214);
+    height: 1.5cm;
+    margin-bottom: 1.5cm;
+}
+#stylefornavbar {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    color: #140b38;
+    font-size: 35px;
+    font-family: 'Segoe UI';
+    word-spacing: 3px;
+}
+h3 {
+    font-size: 25px;
+    color: rgb(0, 0, 66);
+    font-family: 'Segoe UI';
+    font-weight: 600;
+}
+li a{
+    text-decoration: none;
+    float: left;
+    color: white;
+    font-size: 22px;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+li a:hover:not(.active){
+    background-color: rgb(50, 5, 214);
+    font-size: 25px;
+}
+/*styles for the content of the page*/
+h2 {
+    font-size: 25px;
+}
+p,ul {
+    font-size: 22px;
+    line-height: 1.5em;
+    font-family: Times New Roman;
+}
+footer {
+    background-color: rgb(193, 226, 248);
+    padding: 5px;
+}
